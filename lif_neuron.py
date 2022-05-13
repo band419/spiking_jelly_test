@@ -1,15 +1,13 @@
 from typing import Callable
 
 import matplotlib
-import torch
 from spikingjelly.clock_driven import surrogate
 from spikingjelly.clock_driven.neuron import BaseNode
 import torch
-import torch.nn as nn
 import numpy as np
-from spikingjelly.clock_driven import neuron
-from spikingjelly import visualizing
 from matplotlib import pyplot as plt
+from qtorch import FixedPoint
+
 
 
 class LIFNodeCustom(BaseNode):

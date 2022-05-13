@@ -1,6 +1,4 @@
-
 import os
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -10,7 +8,7 @@ import numpy as np
 from spikingjelly.clock_driven import encoding, functional, surrogate
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
-
+from qtorch import FixedPoint, FloatingPoint
 from lif_neuron import LIFNodeCustom
 
 
